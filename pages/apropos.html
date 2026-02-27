@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Le Métissage — À propos</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="../index.html">
+        <span class="brand__mark" aria-hidden="true">LM</span>
+        <span class="brand__name">Le Métissage</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__menu" id="menu">
+        <li><a class="nav__link" href="../index.html">Accueil</a></li>
+        <li><a class="nav__link" href="menu.html">Menu</a></li>
+        <li><a class="nav__link" href="galerie.html">Galerie</a></li>
+        <li><a class="nav__link is-active" href="apropos.html">À propos</a></li>
+        <li><a class="nav__link nav__cta" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="container">
+        <h1>À propos</h1>
+        <p class="lead">Le Métissage : une cuisine fusion, moderne et chaleureuse.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Notre histoire</h2>
+          <p>Le Métissage est né d’une envie : mélanger les inspirations locales et internationales sans perdre l’authenticité du goût.</p>
+          <p>On revisite des classiques avec des épices et des techniques modernes, pour créer des plats accessibles et surprenants.</p>
+
+          <h2 class="mt-xl">Nos valeurs</h2>
+          <ul class="list">
+            <li>Qualité & fraîcheur</li>
+            <li>Accueil et convivialité</li>
+            <li>Créativité et équilibre</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="card__title">L’équipe</h3>
+          <div class="team">
+            <article class="team__member">
+              <div class="avatar" aria-hidden="true"></div>
+              <div>
+                <p><strong>Chef Awa</strong></p>
+                <p class="muted">Spécialité : fusion épicée & sauces maison.</p>
+              </div>
+            </article>
+            <article class="team__member">
+              <div class="avatar" aria-hidden="true"></div>
+              <div>
+                <p><strong>Chef Karim</strong></p>
+                <p class="muted">Spécialité : grillades & dressage moderne.</p>
+              </div>
+            </article>
+            <article class="team__member">
+              <div class="avatar" aria-hidden="true"></div>
+              <div>
+                <p><strong>Service Mariam</strong></p>
+                <p class="muted">Accueil & expérience client.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__bottom">
+      <small>© <span id="year"></span> Le Métissage</small>
+    </div>
+  </footer>
+</body>
+</html>
