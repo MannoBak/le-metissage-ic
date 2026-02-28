@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Le Métissage — Accueil</title>
+  <meta name="description" content="Le Métissage — cuisine d’ici et d’ailleurs, sans frontières." />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="index.html" aria-label="Le Métissage — Accueil">
+        <span class="brand__mark" aria-hidden="true">LM</span>
+        <span class="brand__name">Le Métissage</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__menu" id="menu">
+        <li><a class="nav__link is-active" href="index.html">Accueil</a></li>
+        <li><a class="nav__link" href="pages/menu.html">Menu</a></li>
+        <li><a class="nav__link" href="pages/galerie.html">Galerie</a></li>
+        <li><a class="nav__link" href="pages/apropos.html">À propos</a></li>
+        <li><a class="nav__link nav__cta" href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge">Cuisine fusion</p>
+          <h1>Le Métissage</h1>
+          <p class="lead">Cuisine d’ici et d’ailleurs, sans frontières. Des saveurs locales et internationales, réunies dans une même assiette.</p>
+          <div class="hero__actions">
+            <a class="btn" href="pages/contact.html#reservation">Réserver une table</a>
+            <a class="btn btn--ghost" href="pages/menu.html">Voir le menu</a>
+          </div>
+          <ul class="hero__meta">
+            <li><strong>Ouvert</strong> Lun–Jeu 11h–22h</li>
+            <li><strong>Ven–Sam</strong> 11h–23h</li>
+            <li><strong>Dim</strong> 12h–21h</li>
+          </ul>
+        </div>
+
+        <div class="hero__card card">
+          <h2 class="card__title">Nos points forts</h2>
+          <div class="card__grid">
+            <article class="mini">
+              <h3>Fusion maîtrisée</h3>
+              <p>Recettes originales et équilibrées, épices dosées avec finesse.</p>
+            </article>
+            <article class="mini">
+              <h3>Produits frais</h3>
+              <p>Ingrédients sélectionnés, cuisine du jour, qualité constante.</p>
+            </article>
+            <article class="mini">
+              <h3>Ambiance</h3>
+              <p>Chaleureux, moderne, parfait pour famille, amis ou rendez-vous.</p>
+            </article>
+            <article class="mini">
+              <h3>Service rapide</h3>
+              <p>Accueil pro, écoute, et expérience agréable du début à la fin.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Spécialités du moment</h2>
+          <p>Quelques incontournables — découvrez la carte complète sur la page Menu.</p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card">
+            <h3 class="card__title">Burger “Métissage”</h3>
+            <p class="muted">Bœuf épicé, sauce maison, salade croquante.</p>
+            <p class="price">6000 FCFA</p>
+            <a class="link" href="pages/menu.html#plats">Voir dans le menu →</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Poulet braisé</h3>
+            <p class="muted">Marinade gingembre-citron, pommes sautées.</p>
+            <p class="price">5500 FCFA</p>
+            <a class="link" href="pages/menu.html#plats">Voir dans le menu →</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Jus bissap / gingembre</h3>
+            <p class="muted">Frais, naturel, parfait pour accompagner.</p>
+            <p class="price">1500 FCFA</p>
+            <a class="link" href="pages/menu.html#boissons">Voir dans le menu →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container split">
+        <div>
+          <h2>Un lieu, une histoire</h2>
+          <p class="lead">Le Métissage est né d’une idée simple : faire voyager les papilles sans perdre l’authenticité des goûts.</p>
+          <p>Notre cuisine marie des techniques modernes et des inspirations traditionnelles. Chaque plat raconte une rencontre.</p>
+          <a class="btn btn--ghost" href="pages/apropos.html">Découvrir l’équipe</a>
+        </div>
+
+        <div class="card">
+          <h3 class="card__title">Avis clients</h3>
+          <ul class="quotes">
+            <li>“Excellent, le mélange des saveurs est incroyable.”</li>
+            <li>“Service impeccable et ambiance chaleureuse.”</li>
+            <li>“Le burger Métissage… wow. Je recommande.”</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__brand">Le Métissage</p>
+        <p class="muted">Cuisine d’ici et d’ailleurs, sans frontières.</p>
+      </div>
+      <div>
+        <p class="footer__title">Pages</p>
+        <ul class="footer__links">
+          <li><a href="pages/menu.html">Menu</a></li>
+          <li><a href="pages/galerie.html">Galerie</a></li>
+          <li><a href="pages/apropos.html">À propos</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__title">Contact</p>
+        <ul class="footer__links">
+          <li>Tél : +226 56 09 62 98</li>
+          <li>Email : contact@lemetissage.example</li>
+          <li>Ouaga — Burkina Faso</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <small>© <span id="year"></span> Le Métissage — Tous droits réservés.</small>
+    </div>
+  </footer>
+</body>
+</html>
