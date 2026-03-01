@@ -366,8 +366,3 @@ input:focus, textarea:focus { border-color: rgba(101,214,199,0.5); }
   font-weight: 600;
   letter-spacing: .4px;
 }
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-}
