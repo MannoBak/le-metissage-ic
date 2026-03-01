@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Le Métissage — Galerie</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/main.js"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="../index.html">
+        <span class="brand__mark" aria-hidden="true">LM</span>
+        <span class="brand__name">Le Métissage</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__menu" id="menu">
+        <li><a class="nav__link" href="../index.html">Accueil</a></li>
+        <li><a class="nav__link" href="menu.html">Menu</a></li>
+        <li><a class="nav__link is-active" href="galerie.html">Galerie</a></li>
+        <li><a class="nav__link" href="apropos.html">À propos</a></li>
+        <li><a class="nav__link nav__cta" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="contenu">
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Galerie</h1>
+        <p class="lead">
+          Ambiance, plats et détails de notre univers culinaire.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section class="section">
+      <div class="container">
+
+        <div class="gallery">
+
+          <figure class="photo card">
+            <div class="img-wrapper">
+              <img src="../assets/img1.jpg" alt="Signature du chef">
+              <div class="overlay">
+                <figcaption>Signature du chef</figcaption>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="photo card">
+            <div class="img-wrapper">
+              <img src="../assets/ambiance.jpg" alt="Ambiance salle">
+              <div class="overlay">
+                <figcaption>Ambiance salle</figcaption>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="photo card">
+            <div class="img-wrapper">
+              <img src="../assets/img4.jpg" alt="Plat fusion">
+              <div class="overlay">
+                <figcaption>Plat fusion</figcaption>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="photo card">
+            <div class="img-wrapper">
+              <img src="../assets/dessert.jpg" alt="Dessert">
+              <div class="overlay">
+                <figcaption>Dessert</figcaption>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="photo card">
+            <div class="img-wrapper">
+              <img src="../assets/boissonmaison.jpg" alt="Boisson maison">
+              <div class="overlay">
+                <figcaption>Boisson maison</figcaption>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="photo card">
+            <div class="img-wrapper">
+              <img src="../assets/img6.jpg" alt="Épices et détails">
+              <div class="overlay">
+                <figcaption>Épices &amp; détails</figcaption>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="photo card">
+            <div class="img-wrapper">
+              <img src="../assets/service.jpg" alt="Service">
+              <div class="overlay">
+                <figcaption>Service</figcaption>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="photo card">
+            <div class="img-wrapper">
+              <img src="../assets/télécharger.jpg" alt="Terrasse">
+              <div class="overlay">
+                <figcaption>Terrasse</figcaption>
+              </div>
+            </div>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer__bottom">
+      <small>© <span id="year"></span> Le Métissage</small>
+    </div>
+  </footer>
+
+</body>
+</html>

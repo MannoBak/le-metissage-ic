@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Le Métissage — Contact</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="../index.html">
+        <span class="brand__mark" aria-hidden="true">LM</span>
+        <span class="brand__name">Le Métissage</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__menu" id="menu">
+        <li><a class="nav__link" href="../index.html">Accueil</a></li>
+        <li><a class="nav__link" href="menu.html">Menu</a></li>
+        <li><a class="nav__link" href="galerie.html">Galerie</a></li>
+        <li><a class="nav__link" href="apropos.html">À propos</a></li>
+        <li><a class="nav__link nav__cta is-active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact</h1>
+        <p class="lead">Une question ? Une réservation ? Écrivez-nous.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="card">
+          <h2 id="reservation" class="card__title">Réserver / Message</h2>
+
+          <form class="form" id="contactForm" novalidate>
+            <label>
+              Nom complet
+              <input type="text" name="name" required minlength="2" placeholder="Ex: Abdou Sawadogo" />
+            </label>
+
+            <label>
+              Téléphone
+              <input type="tel" name="phone" required placeholder="Ex: +226 70 00 00 00" />
+            </label>
+
+            <label>
+              Date & heure (optionnel)
+              <input type="datetime-local" name="datetime" />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="4" required minlength="10" placeholder="Votre message..."></textarea>
+            </label>
+
+            <button class="btn" type="submit">Envoyer</button>
+            <p class="form__hint muted" id="formHint" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div>
+          <div class="card">
+            <h2 class="card__title">Coordonnées</h2>
+            <ul class="list">
+              <li><strong>Adresse :</strong> Ouaga, Burkina Faso</li>
+              <li><strong>Tél :</strong> +226 70 00 00 00</li>
+              <li><strong>Email :</strong> contact@lemetissage.example</li>
+            </ul>
+          </div>
+
+          <div class="card mt">
+            <h2 class="card__title">Carte</h2>
+            <p class="muted">Remplacez l’iframe par votre localisation Google Maps.</p>
+            <div class="map">
+              <div class="placeholder">Google Maps (iframe ici)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__bottom">
+      <small>© <span id="year"></span> Le Métissage</small>
+    </div>
+  </footer>
+</body>
+</html>
