@@ -186,7 +186,7 @@ button { font: inherit; cursor: pointer; }
   position: relative; z-index: 1;
   padding: 8rem 0 4rem;
   max-width: 680px;
-  animation: fadeUp .9s var(--ease) both;
+  animation: fade-up .9s var(--ease) both;
 }
 
 .hero__eyebrow {
@@ -248,7 +248,7 @@ button { font: inherit; cursor: pointer; }
   display: block; width: 2px; height: 18px;
   background: linear-gradient(to bottom, transparent, var(--gold));
   border-radius: 2px;
-  animation: scrollLine 2s ease-in-out infinite;
+  animation: scroll-line 2s ease-in-out infinite;
 }
 
 /* ═══════════════════════════════
@@ -431,8 +431,6 @@ button { font: inherit; cursor: pointer; }
   transition: transform .5s var(--ease), filter .4s;
   filter: brightness(.8) saturate(.9);
 }
-.amb-photo:hover img { transform: scale(1.07); filter: brightness(.95) saturate(1.1); }
-
 .amb-photo figcaption {
   position: absolute; bottom: 0; left: 0; right: 0;
   padding: 20px 18px 16px;
@@ -442,6 +440,7 @@ button { font: inherit; cursor: pointer; }
   opacity: 0; transform: translateY(6px);
   transition: opacity .3s, transform .3s;
 }
+.amb-photo:hover img { transform: scale(1.07); filter: brightness(.95) saturate(1.1); }
 .amb-photo:hover figcaption { opacity: 1; transform: translateY(0); }
 
 .ambiance-cta { text-align: center; margin-top: 8px; }
@@ -548,7 +547,7 @@ button { font: inherit; cursor: pointer; }
 }
 .footer__brand-col { display: flex; flex-direction: column; gap: 14px; }
 .footer__brand { font-size: 20px; }
-.footer__brand-col .muted { font-family: system-ui, sans-serif; font-size: 13px; line-height: 1.6; }
+.footer__brand-col > p { font-family: system-ui, sans-serif; font-size: 13px; line-height: 1.6; }
 .footer__title {
   font-family: system-ui, sans-serif;
   font-size: 11px; letter-spacing: .12em;
@@ -588,11 +587,11 @@ button { font: inherit; cursor: pointer; }
 /* ═══════════════════════════════
    MENU PAGE COMPONENTS
 ═══════════════════════════════ */
+.muted { color: var(--muted); }
 .price {
   font-family: system-ui, sans-serif;
   font-weight: 800; color: var(--gold); font-size: .95rem;
 }
-.muted { color: var(--muted); }
 .mt   { margin-top: 1rem; }
 .mt-xl { margin-top: 2.5rem; }
 
@@ -649,7 +648,6 @@ button { font: inherit; cursor: pointer; }
   object-fit: cover;
   transition: transform .5s var(--ease);
 }
-.photo.card:hover img { transform: scale(1.08); }
 .overlay {
   position: absolute; inset: 0;
   background: linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,.04));
@@ -659,6 +657,7 @@ button { font: inherit; cursor: pointer; }
   color: #fff; font-family: system-ui, sans-serif;
   font-size: 14px; font-weight: 600;
 }
+.photo.card:hover img { transform: scale(1.08); }
 
 /* ═══════════════════════════════
    ABOUT PAGE
@@ -708,15 +707,17 @@ input:focus, textarea:focus { border-color: var(--teal); }
 /* ═══════════════════════════════
    ANIMATIONS
 ═══════════════════════════════ */
-@keyframes fadeUp {
+@keyframes fade-up {
   from { opacity: 0; transform: translateY(30px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
 @keyframes pulse {
   0%, 100% { opacity: 1; transform: scale(1); }
   50%       { opacity: .5; transform: scale(.75); }
 }
-@keyframes scrollLine {
+
+@keyframes scroll-line {
   0%   { transform: scaleY(0); transform-origin: top; }
   45%  { transform: scaleY(1); transform-origin: top; }
   50%  { transform: scaleY(1); transform-origin: bottom; }
@@ -746,6 +747,7 @@ input:focus, textarea:focus { border-color: var(--teal); }
   .amb-photo--tall { grid-row: auto; grid-column: 1 / -1; }
   .amb-photo--wide { grid-column: auto; }
 }
+
 @media (max-width: 720px) {
   .nav__toggle { display: inline-grid; }
   .nav__menu {
