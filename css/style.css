@@ -728,10 +728,7 @@ input:focus, textarea:focus { border-color: var(--teal); }
   100% { transform: scaleY(0); transform-origin: bottom; }
 }
 
-/* ═══════════════════════════════
-   RESPONSIVE
-═══════════════════════════════ */
-/* ── TABLET (≤ 1020px) ── */
+
 @media (max-width: 1020px) {
   .dishes { grid-template-columns: 1fr 1fr; }
   .dish-card--featured { grid-row: auto; grid-column: 1 / -1; }
@@ -753,10 +750,8 @@ input:focus, textarea:focus { border-color: var(--teal); }
   .amb-photo--wide { grid-column: auto; }
 }
 
-/* ── MOBILE (≤ 640px) ── */
-@media (max-width: 640px) {
 
-  /* nav */
+@media (max-width: 640px) {
   .nav__toggle { display: inline-grid; }
   .nav__menu {
     position: fixed;
