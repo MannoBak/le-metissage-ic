@@ -16,18 +16,16 @@
         <span class="brand__mark" aria-hidden="true">LM</span>
         <span class="brand__name">Le Métissage</span>
       </a>
-
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
         <span class="sr-only">Ouvrir le menu</span>
         <span class="burger" aria-hidden="true"></span>
       </button>
-
       <ul class="nav__menu" id="menu">
         <li><a class="nav__link" href="../index.html">Accueil</a></li>
         <li><a class="nav__link" href="menu.html">Menu</a></li>
         <li><a class="nav__link" href="galerie.html">Galerie</a></li>
         <li><a class="nav__link is-active" href="apropos.html">À propos</a></li>
-        <li><a class="nav__link nav__cta" href="contact.html">Contact</a></li>
+        <li><a class="nav__link nav__cta" href="contact.html">Réserver</a></li>
       </ul>
     </nav>
   </header>
@@ -35,6 +33,7 @@
   <main id="contenu">
     <section class="page-hero">
       <div class="container">
+        <p class="section__eyebrow">Notre identité</p>
         <h1>À propos</h1>
         <p class="lead">Le Métissage : une cuisine fusion, moderne et chaleureuse.</p>
       </div>
@@ -43,37 +42,50 @@
     <section class="section">
       <div class="container split">
         <div>
+          <p class="section__eyebrow">Nos racines</p>
           <h2>Notre histoire</h2>
-          <p>Le Métissage est né d’une envie : mélanger les inspirations locales et internationales sans perdre l’authenticité du goût.</p>
-          <p>On revisite des classiques avec des épices et des techniques modernes, pour créer des plats accessibles et surprenants.</p>
+          <p style="color:var(--muted);margin:14px 0 20px">Le Métissage est né d'une envie : mélanger les inspirations locales et internationales sans perdre l'authenticité du goût.</p>
+          <p style="color:var(--muted);margin-bottom:28px">On revisite des classiques avec des épices et des techniques modernes, pour créer des plats accessibles, surprenants, et profondément ancrés dans la culture west-africaine.</p>
 
-          <h2 class="mt-xl">Nos valeurs</h2>
-          <ul class="list">
-            <li>Qualité & fraîcheur</li>
-            <li>Accueil et convivialité</li>
-            <li>Créativité et équilibre</li>
+          <p class="section__eyebrow" style="margin-top:40px">Ce qui nous guide</p>
+          <h2>Nos valeurs</h2>
+          <ul class="list" style="margin-top:14px;">
+            <li>Qualité & fraîcheur avant tout</li>
+            <li>Accueil chaleureux et convivialité</li>
+            <li>Créativité, équilibre, et authenticité</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3 class="card__title">L’équipe</h3>
+          <p class="section__eyebrow">Derrière les plats</p>
+          <h3 class="card__title">L'équipe</h3>
           <div class="team">
             <article class="team__member">
-              <div class="avatar" aria-hidden="true"></div>
+              <img
+                src="https://images.unsplash.com/photo-1607631568010-a87245c0daf7?w=200&q=80"
+                alt=""
+                style="width:52px;height:52px;border-radius:12px;object-fit:cover;flex-shrink:0;"
+                loading="lazy"
+              />
               <div>
                 <p><strong>Chef Awa</strong></p>
                 <p class="muted">Spécialité : fusion épicée & sauces maison.</p>
               </div>
             </article>
             <article class="team__member">
-              <div class="avatar" aria-hidden="true"></div>
+              <img
+                src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=200&q=80"
+                alt="Chef Karim préparant les grillades"
+                style="width:52px;height:52px;border-radius:12px;object-fit:cover;flex-shrink:0;"
+                loading="lazy"
+              />
               <div>
                 <p><strong>Chef Karim</strong></p>
                 <p class="muted">Spécialité : grillades & dressage moderne.</p>
               </div>
             </article>
             <article class="team__member">
-              <div class="avatar" aria-hidden="true"></div>
+              <div class="avatar"></div>
               <div>
                 <p><strong>Service Mariam</strong></p>
                 <p class="muted">Accueil & expérience client.</p>
@@ -87,7 +99,7 @@
 
   <footer class="site-footer">
     <div class="container footer__bottom">
-      <small>© <span id="year"></span> Le Métissage</small>
+      <small>© <span id="year"></span> Le Métissage — Tous droits réservés.</small>
     </div>
   </footer>
 </body>
