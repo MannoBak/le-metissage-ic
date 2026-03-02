@@ -3,136 +3,327 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Le Métissage — Accueil</title>
-  <meta name="description" content="Le Métissage — cuisine d’ici et d’ailleurs, sans frontières." />
+  <title>Le Métissage — Cuisine fusion, Ouagadougou</title>
+  <meta name="description" content="Le Métissage — cuisine d'ici et d'ailleurs, sans frontières." />
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/main.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
+  <!-- HEADER -->
   <header class="site-header">
     <nav class="nav container" aria-label="Navigation principale">
       <a class="brand" href="index.html" aria-label="Le Métissage — Accueil">
         <span class="brand__mark" aria-hidden="true">LM</span>
         <span class="brand__name">Le Métissage</span>
       </a>
-
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
         <span class="sr-only">Ouvrir le menu</span>
         <span class="burger" aria-hidden="true"></span>
       </button>
-
       <ul class="nav__menu" id="menu">
         <li><a class="nav__link is-active" href="index.html">Accueil</a></li>
         <li><a class="nav__link" href="pages/menu.html">Menu</a></li>
         <li><a class="nav__link" href="pages/galerie.html">Galerie</a></li>
         <li><a class="nav__link" href="pages/apropos.html">À propos</a></li>
-        <li><a class="nav__link nav__cta" href="pages/contact.html">Contact</a></li>
+        <li><a class="nav__link nav__cta" href="pages/contact.html">Réserver</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="contenu">
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="badge">Cuisine fusion</p>
-          <h1>Le Métissage</h1>
-          <p class="lead">Cuisine d’ici et d’ailleurs, sans frontières. Des saveurs locales et internationales, réunies dans une même assiette.</p>
-          <div class="hero__actions">
-            <a class="btn" href="pages/contact.html#reservation">Réserver une table</a>
-            <a class="btn btn--ghost" href="pages/menu.html">Voir le menu</a>
-          </div>
-          <ul class="hero__meta">
-            <li><strong>Ouvert</strong> Lun–Jeu 11h–22h</li>
-            <li><strong>Ven–Sam</strong> 11h–23h</li>
-            <li><strong>Dim</strong> 12h–21h</li>
-          </ul>
-        </div>
 
-        <div class="hero__card card">
-          <h2 class="card__title">Nos points forts</h2>
-          <div class="card__grid">
-            <article class="mini">
-              <h3>Fusion maîtrisée</h3>
-              <p>Recettes originales et équilibrées, épices dosées avec finesse.</p>
-            </article>
-            <article class="mini">
-              <h3>Produits frais</h3>
-              <p>Ingrédients sélectionnés, cuisine du jour, qualité constante.</p>
-            </article>
-            <article class="mini">
-              <h3>Ambiance</h3>
-              <p>Chaleureux, moderne, parfait pour famille, amis ou rendez-vous.</p>
-            </article>
-            <article class="mini">
-              <h3>Service rapide</h3>
-              <p>Accueil pro, écoute, et expérience agréable du début à la fin.</p>
-            </article>
-          </div>
+    <!-- ══ HERO ══ -->
+    <section class="hero" aria-label="Section principale">
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1800&q=85"
+          alt=""
+          aria-hidden="true"
+          class="hero__bg-img"
+        />
+        <div class="hero__overlay"></div>
+        <!-- decorative grain -->
+        <div class="hero__grain" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__content container">
+        <div class="hero__eyebrow">
+          <span class="hero__dot"></span>
+          <span>Ouagadougou · Burkina Faso</span>
         </div>
+        <h1 class="hero__title">
+          <span class="hero__title-line">Le</span>
+          <span class="hero__title-line hero__title-accent">Métissage</span>
+        </h1>
+        <p class="hero__sub">Cuisine d'ici et d'ailleurs — des saveurs qui racontent une rencontre.</p>
+        <div class="hero__actions">
+          <a class="btn" href="pages/contact.html#reservation">Réserver une table</a>
+          <a class="btn btn--ghost" href="pages/menu.html">
+            <span>Voir le menu</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__bottom container">
+        <ul class="hero__hours">
+          <li><strong>Lun–Jeu</strong> 11h–22h</li>
+          <li><strong>Ven–Sam</strong> 11h–23h</li>
+          <li><strong>Dim</strong> 12h–21h</li>
+        </ul>
+        <a class="hero__scroll" href="#specialites" aria-label="Défiler vers le bas">
+          <span class="hero__scroll-line"></span>
+        </a>
       </div>
     </section>
 
-    <section class="section">
+    <!-- ══ BANDEAU STATS ══ -->
+    <div class="stats-band">
+      <div class="container stats-band__inner">
+        <div class="stat">
+          <span class="stat__num">12+</span>
+          <span class="stat__label">Plats fusion</span>
+        </div>
+        <div class="stat__sep" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat__num">100%</span>
+          <span class="stat__label">Produits frais</span>
+        </div>
+        <div class="stat__sep" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat__num">2</span>
+          <span class="stat__label">Chefs passionnés</span>
+        </div>
+        <div class="stat__sep" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat__num">★ 4.9</span>
+          <span class="stat__label">Avis clients</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ SPÉCIALITÉS ══ -->
+    <section class="section" id="specialites">
       <div class="container">
-        <div class="section__head">
+        <header class="section__head">
+          <p class="section__eyebrow">À la carte</p>
           <h2>Spécialités du moment</h2>
-          <p>Quelques incontournables — découvrez la carte complète sur la page Menu.</p>
+        </header>
+
+        <div class="dishes">
+
+          <article class="dish-card dish-card--featured">
+            <div class="dish-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900&q=80"
+                alt="Burger Métissage — bœuf épicé, sauce maison"
+                loading="lazy"
+                class="dish-card__img"
+              />
+              <span class="dish-card__badge">Signature</span>
+            </div>
+            <div class="dish-card__body">
+              <h3 class="dish-card__name">Burger "Métissage"</h3>
+              <p class="dish-card__desc">Bœuf épicé, sauce maison secrète, salade croquante, frites dorées.</p>
+              <div class="dish-card__footer">
+                <span class="dish-card__price">6 000 <small>FCFA</small></span>
+                <a class="link" href="pages/menu.html#plats">Menu complet →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=900&q=80"
+                alt="Poulet braisé marinade gingembre-citron"
+                loading="lazy"
+                class="dish-card__img"
+              />
+            </div>
+            <div class="dish-card__body">
+              <h3 class="dish-card__name">Poulet braisé</h3>
+              <p class="dish-card__desc">Marinade gingembre-citron, pommes sautées.</p>
+              <div class="dish-card__footer">
+                <span class="dish-card__price">5 500 <small>FCFA</small></span>
+                <a class="link" href="pages/menu.html#plats">Menu complet →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-card__img-wrap">
+              <img
+                src="assets/bissap.jpg"
+                alt="Jus bissap gingembre frais"
+                loading="lazy"
+                class="dish-card__img"
+              />
+            </div>
+            <div class="dish-card__body">
+              <h3 class="dish-card__name">Jus bissap / gingembre</h3>
+              <p class="dish-card__desc">Frais, naturel, préparé chaque jour.</p>
+              <div class="dish-card__footer">
+                <span class="dish-card__price">1 500 <small>FCFA</small></span>
+                <a class="link" href="pages/menu.html#boissons">Menu complet →</a>
+              </div>
+            </div>
+          </article>
+
         </div>
+      </div>
+    </section>
 
-        <div class="grid cards">
-          <article class="card">
-            <h3 class="card__title">Burger “Métissage”</h3>
-            <p class="muted">Bœuf épicé, sauce maison, salade croquante.</p>
-            <p class="price">6000 FCFA</p>
-            <a class="link" href="pages/menu.html#plats">Voir dans le menu →</a>
+    <!-- ══ HISTOIRE (SPLIT) ══ -->
+    <section class="section section--story">
+      <div class="container story-split">
+        <div class="story-split__images">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80"
+            alt="L'intérieur chaleureux du Métissage"
+            loading="lazy"
+            class="story-split__img story-split__img--main"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80"
+            alt="Plats travaillés avec soin"
+            loading="lazy"
+            class="story-split__img story-split__img--small"
+          />
+        </div>
+        <div class="story-split__text">
+          <p class="section__eyebrow">Notre histoire</p>
+          <h2>Un lieu, une idée</h2>
+          <p class="lead">Faire voyager les papilles sans perdre l'authenticité des goûts.</p>
+          <p>Notre cuisine marie des techniques modernes et des inspirations traditionnelles. Chaque plat est une rencontre entre deux mondes — local et international, épicé et raffiné.</p>
+          <a class="btn btn--outline" href="pages/apropos.html">Découvrir l'équipe</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ GALERIE AMBIANCE ══ -->
+    <section class="section section--ambiance">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__eyebrow">Atmosphère</p>
+          <h2>L'ambiance Le Métissage</h2>
+        </header>
+        <div class="ambiance-grid">
+          <figure class="amb-photo amb-photo--tall">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=80" alt="Salle du restaurant" loading="lazy" />
+            <figcaption>La salle</figcaption>
+          </figure>
+          <figure class="amb-photo">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Plat du chef" loading="lazy" />
+            <figcaption>Plat du chef</figcaption>
+          </figure>
+          <figure class="amb-photo">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80" alt="Détails de table" loading="lazy" />
+            <figcaption>Art de la table</figcaption>
+          </figure>
+          <figure class="amb-photo amb-photo--wide">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=900&q=80" alt="Cuisine colorée" loading="lazy" />
+            <figcaption>Saveurs & couleurs</figcaption>
+          </figure>
+        </div>
+        <div class="ambiance-cta">
+          <a class="btn btn--ghost" href="pages/galerie.html">Voir toute la galerie</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ POINTS FORTS ══ -->
+    <section class="section section--features">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__eyebrow">Pourquoi nous</p>
+          <h2>Nos points forts</h2>
+        </header>
+        <div class="features">
+          <article class="feature">
+            <span class="feature__icon" aria-hidden="true">✦</span>
+            <h3>Fusion maîtrisée</h3>
+            <p>Recettes originales et équilibrées, épices dosées avec finesse pour un voyage en bouche.</p>
           </article>
-
-          <article class="card">
-            <h3 class="card__title">Poulet braisé</h3>
-            <p class="muted">Marinade gingembre-citron, pommes sautées.</p>
-            <p class="price">5500 FCFA</p>
-            <a class="link" href="pages/menu.html#plats">Voir dans le menu →</a>
+          <article class="feature">
+            <span class="feature__icon" aria-hidden="true">✦</span>
+            <h3>Produits frais</h3>
+            <p>Ingrédients sélectionnés chaque matin, cuisine du jour, qualité constante.</p>
           </article>
-
-          <article class="card">
-            <h3 class="card__title">Jus bissap / gingembre</h3>
-            <p class="muted">Frais, naturel, parfait pour accompagner.</p>
-            <p class="price">1500 FCFA</p>
-            <a class="link" href="pages/menu.html#boissons">Voir dans le menu →</a>
+          <article class="feature">
+            <span class="feature__icon" aria-hidden="true">✦</span>
+            <h3>Ambiance unique</h3>
+            <p>Chaleureux, moderne, parfait pour famille, amis ou rendez-vous professionnels.</p>
+          </article>
+          <article class="feature">
+            <span class="feature__icon" aria-hidden="true">✦</span>
+            <h3>Service attentionné</h3>
+            <p>Accueil professionnel, à l'écoute, pour une expérience agréable du début à la fin.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt">
-      <div class="container split">
-        <div>
-          <h2>Un lieu, une histoire</h2>
-          <p class="lead">Le Métissage est né d’une idée simple : faire voyager les papilles sans perdre l’authenticité des goûts.</p>
-          <p>Notre cuisine marie des techniques modernes et des inspirations traditionnelles. Chaque plat raconte une rencontre.</p>
-          <a class="btn btn--ghost" href="pages/apropos.html">Découvrir l’équipe</a>
-        </div>
-
-        <div class="card">
-          <h3 class="card__title">Avis clients</h3>
-          <ul class="quotes">
-            <li>“Excellent, le mélange des saveurs est incroyable.”</li>
-            <li>“Service impeccable et ambiance chaleureuse.”</li>
-            <li>“Le burger Métissage… wow. Je recommande.”</li>
-          </ul>
+    <!-- ══ AVIS ══ -->
+    <section class="section section--reviews">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__eyebrow">Témoignages</p>
+          <h2>Ce que disent nos clients</h2>
+        </header>
+        <div class="reviews">
+          <blockquote class="review">
+            <p>"Excellent — le mélange des saveurs est incroyable. Une expérience unique à Ouagadougou !"</p>
+            <cite>— Fatou K.</cite>
+          </blockquote>
+          <blockquote class="review">
+            <p>"Service impeccable et ambiance chaleureuse. On se sent chez soi dès l'entrée."</p>
+            <cite>— Ibrahim S.</cite>
+          </blockquote>
+          <blockquote class="review">
+            <p>"Le burger Métissage… wow. Je recommande sans hésiter à tout le monde."</p>
+            <cite>— Marie L.</cite>
+          </blockquote>
         </div>
       </div>
     </section>
+
+    <!-- ══ CTA FINAL ══ -->
+    <section class="section section--cta">
+      <div class="container">
+        <div class="cta-block">
+          <img
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80"
+            alt=""
+            aria-hidden="true"
+            class="cta-block__bg"
+          />
+          <div class="cta-block__overlay"></div>
+          <div class="cta-block__content">
+            <h2>Prêt à vivre l'expérience ?</h2>
+            <p>Réservez votre table dès maintenant ou venez nous découvrir directement.</p>
+            <div class="hero__actions">
+              <a class="btn" href="pages/contact.html#reservation">Réserver une table</a>
+              <a class="btn btn--ghost" href="pages/menu.html">Voir le menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer__grid">
-      <div>
-        <p class="footer__brand">Le Métissage</p>
-        <p class="muted">Cuisine d’ici et d’ailleurs, sans frontières.</p>
+      <div class="footer__brand-col">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true">LM</span>
+          <span class="brand__name footer__brand">Le Métissage</span>
+        </div>
+        <p class="muted">Cuisine d'ici et d'ailleurs, sans frontières. Ouagadougou, Burkina Faso.</p>
       </div>
       <div>
         <p class="footer__title">Pages</p>
@@ -144,11 +335,19 @@
         </ul>
       </div>
       <div>
+        <p class="footer__title">Horaires</p>
+        <ul class="footer__links">
+          <li>Lun–Jeu : 11h–22h</li>
+          <li>Ven–Sam : 11h–23h</li>
+          <li>Dim : 12h–21h</li>
+        </ul>
+      </div>
+      <div>
         <p class="footer__title">Contact</p>
         <ul class="footer__links">
-          <li>Tél : +226 56 09 62 98</li>
-          <li>Email : contact@lemetissage.example</li>
-          <li>Ouaga — Burkina Faso</li>
+          <li>+226 56 09 62 98</li>
+          <li>contact@lemetissage.example</li>
+          <li>Ouagadougou — BF</li>
         </ul>
       </div>
     </div>

@@ -16,18 +16,16 @@
         <span class="brand__mark" aria-hidden="true">LM</span>
         <span class="brand__name">Le Métissage</span>
       </a>
-
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
         <span class="sr-only">Ouvrir le menu</span>
         <span class="burger" aria-hidden="true"></span>
       </button>
-
       <ul class="nav__menu" id="menu">
         <li><a class="nav__link" href="../index.html">Accueil</a></li>
         <li><a class="nav__link is-active" href="menu.html">Menu</a></li>
         <li><a class="nav__link" href="galerie.html">Galerie</a></li>
         <li><a class="nav__link" href="apropos.html">À propos</a></li>
-        <li><a class="nav__link nav__cta" href="contact.html">Contact</a></li>
+        <li><a class="nav__link nav__cta" href="contact.html">Réserver</a></li>
       </ul>
     </nav>
   </header>
@@ -35,9 +33,9 @@
   <main id="contenu">
     <section class="page-hero">
       <div class="container">
+        <p class="section__eyebrow">Carte</p>
         <h1>Notre menu</h1>
         <p class="lead">Des classiques revisités et des créations fusion — faites votre choix.</p>
-
         <div class="chips" aria-label="Catégories du menu">
           <a class="chip" href="#entrees">Entrées</a>
           <a class="chip" href="#plats">Plats</a>
@@ -49,102 +47,96 @@
 
     <section class="section">
       <div class="container">
-        <h2 id="entrees">Entrées</h2>
-        <div class="grid menu">
+
+        <h2 id="entrees" class="section__eyebrow" style="font-size:1.4rem;color:var(--text);letter-spacing:-.01em;margin-bottom:24px;">Entrées</h2>
+        <div class="grid menu-grid">
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Samoussas poulet-gingembre</h3><p class="price">2500 FCFA</p>
+              <h3>Samoussas poulet-gingembre</h3><p class="price">2 500 FCFA</p>
             </div>
             <p class="muted">Croustillants, légèrement relevés.</p>
           </article>
-
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Salade mangue-avocat</h3><p class="price">3000 FCFA</p>
+              <h3>Salade mangue-avocat</h3><p class="price">3 000 FCFA</p>
             </div>
             <p class="muted">Fraîche et équilibrée.</p>
           </article>
-
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Bruschetta tomate & basilic</h3><p class="price">2800 FCFA</p>
+              <h3>Bruschetta tomate & basilic</h3><p class="price">2 800 FCFA</p>
             </div>
-            <p class="muted">Pain grillé, huile d’olive, herbes.</p>
+            <p class="muted">Pain grillé, huile d'olive, herbes fraîches.</p>
           </article>
         </div>
 
-        <h2 id="plats" class="mt-xl">Plats</h2>
-        <div class="grid menu">
+        <h2 id="plats" class="section__eyebrow mt-xl" style="font-size:1.4rem;color:var(--text);letter-spacing:-.01em;margin-bottom:24px;">Plats</h2>
+        <div class="grid menu-grid">
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Poulet braisé & pommes sautées</h3><p class="price">5500 FCFA</p>
+              <h3>Poulet braisé & pommes sautées</h3><p class="price">5 500 FCFA</p>
             </div>
             <p class="muted">Marinade citron-gingembre, cuisson braisée.</p>
           </article>
-
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Riz curry & légumes croquants</h3><p class="price">5000 FCFA</p>
+              <h3>Riz curry & légumes croquants</h3><p class="price">5 000 FCFA</p>
             </div>
             <p class="muted">Aromatique, généreux, végétarien.</p>
           </article>
-
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Burger “Métissage” + frites</h3><p class="price">6000 FCFA</p>
+              <h3>Burger "Métissage" + frites</h3><p class="price">6 000 FCFA</p>
             </div>
-            <p class="muted">Bœuf épicé, sauce maison, fromage.</p>
+            <p class="muted">Bœuf épicé, sauce maison, fromage fondant.</p>
           </article>
-
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Poisson grillé sauce citron</h3><p class="price">6500 FCFA</p>
+              <h3>Poisson grillé sauce citron</h3><p class="price">6 500 FCFA</p>
             </div>
             <p class="muted">Servi avec accompagnement du jour.</p>
           </article>
         </div>
 
-        <h2 id="desserts" class="mt-xl">Desserts</h2>
-        <div class="grid menu">
+        <h2 id="desserts" class="section__eyebrow mt-xl" style="font-size:1.4rem;color:var(--text);letter-spacing:-.01em;margin-bottom:24px;">Desserts</h2>
+        <div class="grid menu-grid">
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Mousse chocolat</h3><p class="price">2500 FCFA</p>
+              <h3>Mousse chocolat</h3><p class="price">2 500 FCFA</p>
             </div>
             <p class="muted">Onctueuse, cacao intense.</p>
           </article>
-
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Salade de fruits</h3><p class="price">2000 FCFA</p>
+              <h3>Salade de fruits</h3><p class="price">2 000 FCFA</p>
             </div>
-            <p class="muted">Fruits de saison.</p>
+            <p class="muted">Fruits de saison frais.</p>
           </article>
-
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Crêpe caramel</h3><p class="price">2500 FCFA</p>
+              <h3>Crêpe caramel</h3><p class="price">2 500 FCFA</p>
             </div>
             <p class="muted">Caramel maison, douceur garantie.</p>
           </article>
         </div>
 
-        <h2 id="boissons" class="mt-xl">Boissons</h2>
-        <div class="grid menu">
+        <h2 id="boissons" class="section__eyebrow mt-xl" style="font-size:1.4rem;color:var(--text);letter-spacing:-.01em;margin-bottom:24px;">Boissons</h2>
+        <div class="grid menu-grid">
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Jus bissap / gingembre</h3><p class="price">1500 FCFA</p>
+              <h3>Jus bissap / gingembre</h3><p class="price">1 500 FCFA</p>
             </div>
-            <p class="muted">Frais, naturel.</p>
+            <p class="muted">Frais, naturel, préparé chaque jour.</p>
           </article>
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Eau</h3><p class="price">1000 FCFA</p>
+              <h3>Eau plate / gazeuse</h3><p class="price">1 000 FCFA</p>
             </div>
-            <p class="muted">Plate / gazeuse selon stock.</p>
+            <p class="muted">Selon stock disponible.</p>
           </article>
           <article class="card menu-item">
             <div class="menu-item__top">
-              <h3>Cocktail maison</h3><p class="price">2500 FCFA</p>
+              <h3>Cocktail maison</h3><p class="price">2 500 FCFA</p>
             </div>
             <p class="muted">Fruité, surprise du chef.</p>
           </article>
@@ -155,7 +147,7 @@
 
   <footer class="site-footer">
     <div class="container footer__bottom">
-      <small>© <span id="year"></span> Le Métissage</small>
+      <small>© <span id="year"></span> Le Métissage — Tous droits réservés.</small>
     </div>
   </footer>
 </body>
